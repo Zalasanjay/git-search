@@ -2,12 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
-    ### How Application Works
-    Application have two routes first is for search git user and another is to see git user details.
-    
-    for searching git user auto-complete element is used and it sync with live git API that provides list of users.
 
-    when user clicks on searched user it will takes you to user details page where you can find basic details of user, repositories and followers list.
+   ## How Application Works
+   Application have two routes first is for search git user and another is to see git user details.
+   
+    1. search user ('\')
+    2. user details ('details\:username')
+    
+   To search git user auto-complete element is used and it sync with live git API that provides list of users.
+
+   when user clicks on searched user it will takes you to user details page where you can find basic details of user, repositories and followers list.
+   
+   On user details page 3 APIs get call to get user details(Basic details, repo, followers), if you modify url with username params(last perameter of url) it will takes details too and if no details found app will show appropriate message alert.
 
 ## Development server
 
