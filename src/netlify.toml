@@ -1,0 +1,9 @@
+[[build]]
+    command = "npm run build"
+    publich = "/dist/git-search"
+    base = "/"
+
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
